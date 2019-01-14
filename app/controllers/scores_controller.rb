@@ -1,6 +1,7 @@
 class ScoresController < ApplicationController
   CREATE_URL = "https://cryptic-spire-12744.herokuapp.com/api/scores"
-  UPDATE_URL = "https://cryptic-spire-12744.herokuapp.com/update_score"
+  UPDATE_URL = "https://cryptic-spire-12744.herokuapp.com/api/scores/update_score"
+
   def index
     @scores = Score.all
   end
