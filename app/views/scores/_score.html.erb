@@ -1,0 +1,5 @@
+<div id="<%= score.home_team + "_" + score.away_team%> ">
+  <span><%= score.home_team %></span> <%= score.home_score %> -
+  <span><%= score.away_score %></span>  <%= score.away_team %>
+  <%= link_to "Edit", edit_score_path(score) %>
+</div>
